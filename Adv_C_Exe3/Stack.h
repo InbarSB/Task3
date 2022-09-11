@@ -5,7 +5,7 @@
 /// <summary>
 /// 
 /// </summary>
-typedef struct charNode 
+typedef struct charNode
 {
 	char data;
 	struct charNode* next;
@@ -14,7 +14,7 @@ typedef struct charNode
 /// <summary>
 /// 
 /// </summary>
-typedef struct Stack 
+typedef struct Stack
 {
 	charNode* head;
 }Stack;

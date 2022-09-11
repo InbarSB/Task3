@@ -27,6 +27,30 @@ typedef struct Queue
 	intNode* tail;
 }Queue;
 
+//Stack ADT implementation for int data stack
+
+/// <summary>
+/// This structure represents a single node in a
+///		singly linked list.
+/// </summary>
+/// 
+/// <field> data - the value stored in the node </field>
+/// <field> next - pointer to the next node in the list </field>
+typedef struct intNodeS {
+	unsigned int data;
+	struct intNodeS* next;
+} intNodeS;
+
+
+/// <summary>
+/// Managing structure for the Stack (int Data) ADT
+/// </summary>
+/// 
+/// <field> head - pointer to the head node of a singly linked list </field>
+typedef struct intStack {
+	intNodeS* head;
+} intStack;
+
 /// <summary>
 /// Initializes a Queue ADT structure.
 /// 
@@ -89,3 +113,11 @@ void cutAndReplace(Queue* q);
 /// </summary>
 /// <param name="s"></param>
 void sortKidsFirst(Queue* q);
+
+void reverseQueue(Queue* q);
+
+void push_int(intStack* s, int data);
+
+char pop_int(intStack* s);
+
+void printQueue(Queue* q);
