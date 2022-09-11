@@ -90,7 +90,7 @@ void flipBetweenHashes(const char* sentence)
 	while (s2->head != NULL) {							//print all sentence in the correct order.
 		printf("%c", pop(s2));
 	}
-
+	printf("\n");
 }
 
 int isPalindrome(Stack* s)

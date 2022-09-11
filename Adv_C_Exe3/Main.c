@@ -42,6 +42,7 @@ void main()
 	initStack(&s1);
 	initStack(&s2);
 	initStack(&s3);
+
 	flipBetweenHashes(str);
 	flipBetweenHashes(str2);
 
